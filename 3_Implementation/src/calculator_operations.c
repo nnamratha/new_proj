@@ -1,24 +1,34 @@
-#include <calculator_operations.h>
+#include "calculator_operations.h"
+#include "stdio.h"
+#include "math.h"
 
-int add(int operand1, int operand2)
-{
-    return operand1 + operand2;
+int addition(value *find){
+   int final=find->val1 + find->val2;
+   printf("%d\n",final);
+}
+int subtraction(value *find){
+    int final=find->val1  -find->val2;
+    printf("%d\n",final);
+}
+int multiplication(value *find){
+    int final= find->val1 * find->val2;
+    printf("%d\n",final);
+}
+int division(value *find){
+    int final= find->val1 / find->val2;
+    printf("%d\n",final);
+}
+int squareroot(value *find){
+int final=sqrt(find->val1);
+printf("%d\n",final);
 }
 
-int subtract(int operand1, int operand2)
-{
-    return operand1 - operand2;
-}
-
-int multiply(int operand1, int operand2)
-{
-    return operand1 * operand2;
-}
-
-int divide(int operand1, int operand2)
-{
-    if(0 == operand2)
-        return 0;
-    else
-        return operand1 / operand2;
+int factorial(value *find){
+    
+        int sum = 1;
+    
+        for (int a = 1; a <= find->val1; ++a)
+                    sum *= a;
+        
+        printf("%d\n",sum);
 }
