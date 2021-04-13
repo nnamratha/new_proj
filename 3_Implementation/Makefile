@@ -1,9 +1,10 @@
-PROJ_NAME = Calculator
-TEST_PROJ_NAME = Test_$(PROJ_NAME)
+PROJECT_NAME = CALCULATOR             ## project name ##
+TEST_PROJECT_NAME = Test_$(PROJECT_NAME)
 
-BUILD_DIR = Build
-
+BUILD = Build
+# ALL source code files
 SRC = src/calculator_operations.c
+# All test source files
 TEST_SRC = test/test_calculator_operations.c\
 unity/unity.c
 
@@ -26,12 +27,34 @@ endif
 # Makefile will not run target command if the name with file already exists. To override, use .PHONY
 .PHONY : all test coverage run clean
 
-all:$(BUILD_DIR)
-	gcc main.c $(SRC) $(INC) -lm -o $(call FixPath,$(BUILD_DIR)/$(PROJ_NAME).$(EXEC))
+all:$(BUILD)
+	gcc main.c $(SRC) $(INC) -lm -o $(call FixPath,$(BUILD)/$(PROJECT_NAME).$(EXEC))
 
-run: $(BUILD_DIR)
-	$(call FixPath,$(BUILD_DIR)/$(PROJ_NAME).$(EXEC))
+run: $(BUILD)
+	$(call FixPath,$(BUILD)/$(PROJECT_NAME).$(EXEC))
+
 git: $^
 	git add .
 	git commit -m "push"
 	git push -u origin master
+
+coverage:$(BUILD)
+	gcc $(TEST_SRC) $(SRC) $(INC) -fprofile-arcs -ftest-coverage -lm -o $(call FixPath,$(BUILD)/$(TEST_PROJECT_NAME).$(EXEC))
+	$(call FixPath,$(BUILD)/$(TEST_PROJECT_NAME).$(EXEC))
+   
+clean:
+	$(RM) $(call FixPath,$(BUILD)/*)
+	$(RM) *.gcda *.gcov *gcno 
+
+cppcheck:
+	cppcheck --enable=all --check-config --suppress=missingIncludeSystem main.c $(SRC) -Iinc 
+	
+valgrind:
+	valgrind $(call FixPath,$(BUILD)/$(TEST_PROJECT_NAME).$(EXEC))
+
+test:$(BUILD)
+	gcc $(TEST_SRC) $(SRC) $(INC) -lm -o $(call FixPath,$(BUILD)/$(TEST_PROJECT_NAME).$(EXEC))
+		$(call FixPath,$(BUILD)/$(TEST_PROJECT_NAME).$(EXEC))
+
+$(BUILD):
+	mkdir $(BUILD)
