@@ -20,6 +20,7 @@ void test_divide_by0(void);
 void test_s_root(void);
 void test_fact(void);
 void test_fact_negative(void);
+void test_fact_by0(void);
 void test_expo(void);
 
 
@@ -41,6 +42,7 @@ int main()
   RUN_TEST(test_fact);
   RUN_TEST(test_expo);
 RUN_TEST(test_fact_negative);
+RUN_TEST(test_fact_by0);
 RUN_TEST(test_divide_by0);
   /* Close the Unity Test Framework */
   return UNITY_END();
@@ -80,6 +82,10 @@ void test_fact(void) {
 
 void test_fact_negative(void) {
   TEST_ASSERT_EQUAL(-1, factorial(&v6));
+}
+
+void test_fact_by0(void) {
+  TEST_ASSERT_EQUAL(1, factorial(&d2));
 }
 
 void test_expo(void) {

@@ -12,7 +12,7 @@ int addition(value *find){
    return final;
 }
 int subtraction(value *find){
-   int final=(find->val1)-(find->val2);                     // addition of operands
+   int final=(find->val1)-(find->val2);                     // subtraction of operands
    printf("sub %d\n",final);
    return final;
 }
