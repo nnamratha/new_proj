@@ -18,18 +18,20 @@ int subtraction(value *find){
 }
 
 int multiplication(int *value1,int *value2){
-   int final= (*value1)*(*value2);                  
+   int final= (*value1)*(*value2);                         // multiplication of operands
     printf(" multiplication =%d\n",final);
-    return final; }
+    return final;
+}
+
 int division(int *value1,int *value2){
     if(*value2==0){
-        printf("divisor can;t be zero");
+        printf("divisor can;t be zero");                 // division when any one of the operand is 0
         return -1;
     }
 
    int final= (*value1)/(*value2);                  
     printf(" quotient =%d\n",final);
-    printf(" remainder =%d\n",(*value1)%(*value2));
+    printf(" remainder =%d\n",(*value1)%(*value2));     // division of 2 operands
     return final;
 }
 int squareroot(int *value3){
@@ -39,7 +41,7 @@ int squareroot(int *value3){
 }
 int factorial(int *value3){
   if(*value3 < 0)
-    {printf("factorial for negative numbers not possible\n");
+    {printf("factorial for negative numbers not possible\n");          // factorial of the operand
       return -1;}
   if(*value3 == 0)
    { return 1;}
@@ -50,8 +52,15 @@ int factorial(int *value3){
  printf("%d!= %d\n",*value3,fact);
  return fact;
 }
+
 int exponent(int *value3){
    float final= exp(*value3);               
-    printf(" exponent =%.3f\n",final);
+    printf(" exponent =%.3f\n",final);                                // exponent of operand
+    return final;
+}
+
+int logarithm(int *value3){
+   float final= log(*value3);               
+    printf(" logarithm =%.3f\n",final);                                // logarithm of operand
     return final;
 }

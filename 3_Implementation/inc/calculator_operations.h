@@ -1,9 +1,9 @@
 /**
  * @file calculator_operations.h
- * @author your name (you@domain.com)
+ * @author namratha
  * @brief 
  * @version 0.1
- * @date 2021-04-11
+ * @date 2021-04-13
  * 
  * @copyright Copyright (c) 2021
  * 
@@ -33,4 +33,5 @@ int division(int *value1, int *value2);
 int squareroot(int *value3);
 int factorial(int *value);
 int exponent(int *value3);
+int logarithm(int *value3);
 #endif  
