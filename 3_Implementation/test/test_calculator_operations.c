@@ -1,15 +1,11 @@
 #include "unity.h"
 #include <calculator_operations.h>
-
-/* Modify these two lines according to the project */
-#include <calculator_operations.h>
 #define PROJECT_NAME    "CALCULATOR"
 
-// value testvalue = {6,2};
-// value testvalue1 = {8,3};
-// value testvalue2 = {10,5};
-// value testvalue3 = {12,6};
-
+value test={3,1},test1={-3,-1};
+int v1=6,v2=2,v3=4;
+int v4=-6,v5=-2,v6=-4;
+int d1=2,d2=0;
 /* Required by the unity test framework */
 void setUp(){}
 /* Required by the unity test framework */
@@ -20,9 +16,12 @@ void test_add(void);
 void test_subtract(void);
 void test_multiply(void);
 void test_divide(void);
+void test_divide_by0(void);
 void test_s_root(void);
 void test_fact(void);
+void test_fact_negative(void);
 void test_expo(void);
+
 
 
 
@@ -41,57 +40,49 @@ int main()
   RUN_TEST(test_s_root);
   RUN_TEST(test_fact);
   RUN_TEST(test_expo);
-
+RUN_TEST(test_fact_negative);
+RUN_TEST(test_divide_by0);
   /* Close the Unity Test Framework */
   return UNITY_END();
 }
 
 /* Write all the test functions */ 
 void test_add(void) {
-  TEST_ASSERT_EQUAL(8, addition(6, 2));
-  TEST_ASSERT_EQUAL(11, addition(8,3));
-  TEST_ASSERT_EQUAL(15, addition(10,5));
-  TEST_ASSERT_EQUAL(18, addition(12,6));
+  TEST_ASSERT_EQUAL(4, addition(&test));
+  TEST_ASSERT_EQUAL(-4, addition(&test1));
 }
 
 void test_subtract(void) {
-  TEST_ASSERT_EQUAL(4, subtraction(6, 2));
-  TEST_ASSERT_EQUAL(5, subtraction(8,3));
-  TEST_ASSERT_EQUAL(5, subtraction(10,5));
-  TEST_ASSERT_EQUAL(6, subtraction(12,6));
+  TEST_ASSERT_EQUAL(2,subtraction(&test));
+  TEST_ASSERT_EQUAL(-2, subtraction(&test1));
 }
 
 void test_multiply(void) {
-  TEST_ASSERT_EQUAL(12, multiplication(6, 2));
-  TEST_ASSERT_EQUAL(24, multiplication(8,3));
-  TEST_ASSERT_EQUAL(50, multiplication(10,5));
-  TEST_ASSERT_EQUAL(72, multiplication(12,6));
+  TEST_ASSERT_EQUAL(12, multiplication(&v1,&v2));
+  TEST_ASSERT_EQUAL(12, multiplication(&v4,&v5));
 }
 
 void test_divide(void) {
-  TEST_ASSERT_EQUAL(3, division(6, 2));
-  TEST_ASSERT_EQUAL(2, division(8,3));
-  TEST_ASSERT_EQUAL(2, division(10,5));
-  TEST_ASSERT_EQUAL(2, division(12,6));
+  TEST_ASSERT_EQUAL(3, division(&v1,&v2));
+  TEST_ASSERT_EQUAL(3, division(&v4,&v5));
+}
+void test_divide_by0(void){
+  TEST_ASSERT_EQUAL(-1, division(&d1,&d2));
 }
 
 void test_s_root(void) {
-  TEST_ASSERT_EQUAL(2, square_root(6, 2));
-  TEST_ASSERT_EQUAL(2, square_root(8,3));
-  TEST_ASSERT_EQUAL(3, square_root(10,5));
-  TEST_ASSERT_EQUAL(3, square_root(12,6));
+  TEST_ASSERT_EQUAL(2, squareroot(&v3));
 }
 
 void test_fact(void) {
-  TEST_ASSERT_EQUAL(720, factorial(6, 2));
-  TEST_ASSERT_EQUAL(40320, factorial(8,3));
-  TEST_ASSERT_EQUAL(3628800, factorial(10,5));
-  TEST_ASSERT_EQUAL(479001600, factorial(12,6));
+  TEST_ASSERT_EQUAL(24, factorial(&v3));
+}
+
+void test_fact_negative(void) {
+  TEST_ASSERT_EQUAL(-1, factorial(&v6));
 }
 
 void test_expo(void) {
-  TEST_ASSERT_EQUAL(403.428, exponent(6, 2));
-  TEST_ASSERT_EQUAL(2980.957, exponent(8,3));
-  TEST_ASSERT_EQUAL(22026.465, exponent(10,5));
-  TEST_ASSERT_EQUAL(162754.791, exponent(12,6));
+  TEST_ASSERT_EQUAL(54.598, exponent(&v3));
+  TEST_ASSERT_EQUAL(0.018, exponent(&v6));
 }

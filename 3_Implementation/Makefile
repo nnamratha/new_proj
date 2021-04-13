@@ -1,4 +1,4 @@
-PROJECT_NAME = CALCULATOR             ## project name ##
+PROJECT_NAME = CALCULATOR
 TEST_PROJECT_NAME = Test_$(PROJECT_NAME)
 
 BUILD = Build
@@ -32,12 +32,7 @@ all:$(BUILD)
 
 run: $(BUILD)
 	$(call FixPath,$(BUILD)/$(PROJECT_NAME).$(EXEC))
-
-git: $^
-	git add .
-	git commit -m "push"
-	git push -u origin master
-
+	
 coverage:$(BUILD)
 	gcc $(TEST_SRC) $(SRC) $(INC) -fprofile-arcs -ftest-coverage -lm -o $(call FixPath,$(BUILD)/$(TEST_PROJECT_NAME).$(EXEC))
 	$(call FixPath,$(BUILD)/$(TEST_PROJECT_NAME).$(EXEC))
@@ -50,9 +45,12 @@ cppcheck:
 	cppcheck --enable=all --check-config --suppress=missingIncludeSystem main.c $(SRC) -Iinc 
 	
 valgrind:
+
+	gcc $(TEST_SRC) $(SRC) $(INC) -lm -o $(call FixPath,$(BUILD)/$(TEST_PROJECT_NAME).$(EXEC))
 	valgrind $(call FixPath,$(BUILD)/$(TEST_PROJECT_NAME).$(EXEC))
 
 test:$(BUILD)
+# gcc $(TEST_SRC) $(SRC) $(INC) -fprofile-arcs -ftest-coverage -lm -o $(call FixPath,$(BUILD)/$(TEST_PROJECT_NAME).$(EXEC))
 	gcc $(TEST_SRC) $(SRC) $(INC) -lm -o $(call FixPath,$(BUILD)/$(TEST_PROJECT_NAME).$(EXEC))
 		$(call FixPath,$(BUILD)/$(TEST_PROJECT_NAME).$(EXEC))
 

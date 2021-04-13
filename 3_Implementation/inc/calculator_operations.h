@@ -12,7 +12,7 @@
 #define CALCULATOR_OPERATIONS_H
 #include<stdio.h>
 #include<stdlib.h>
-
+#include<math.h>
 
 typedef struct value{
     int val1;                        //variables used in calculator
@@ -25,12 +25,12 @@ typedef struct value{
  * @param find 
  * @return int 
  */
-
-int addition(value *find);
-int subtraction(value *find);
-int multiplication(value *find);
-int division(value *find);
-int squareroot(value *find);
-int factorial(value *find);
-int exponent(value *find);
+// int *value1,*value2,*value3;
+int addition(value *val);
+int subtraction(value *val);
+int multiplication(int *value1, int *value2);
+int division(int *value1, int *value2);
+int squareroot(int *value3);
+int factorial(int *value);
+int exponent(int *value3);
 #endif  
