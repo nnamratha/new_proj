@@ -29,7 +29,7 @@ Whenever there is use of any calculations we use it.
 
 ## Where:
 
-It can be used anywhere to do calculTIONS.
+It can be used anywhere to do calculations.
 
 ## How:
 
