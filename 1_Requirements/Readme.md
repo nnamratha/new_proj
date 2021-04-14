@@ -9,7 +9,8 @@ Calculators are simply a tool, which helps students to solve problems. Since the
 ![Description](Link to Pic)
 -- Content 
 ## Defining Our System
-    -- TBD
+    ![](https://user-images.githubusercontent.com/80394921/114738820-f43f9f00-9d65-11eb-9d9c-8c34c62bc880.jpg)
+    
 ## SWOT ANALYSIS
 
 ![CALCULATOR](https://user-images.githubusercontent.com/80394921/114668527-799f6100-9d1e-11eb-8929-2c1b0e7e0c24.png)
