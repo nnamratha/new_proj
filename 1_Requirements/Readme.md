@@ -11,7 +11,8 @@ Calculators are simply a tool, which helps students to solve problems. Since the
 ## Defining Our System
     -- TBD
 ## SWOT ANALYSIS
-https://www.canva.com/design/DAEbbvdf-zk/share/preview?token=vlN8kaP0Fq_4UvwmgsLW-g&role=EDITOR&utm_campaign=designshare&utm_source=sharebutton
+
+![CALCULATOR](https://user-images.githubusercontent.com/80394921/114668527-799f6100-9d1e-11eb-8929-2c1b0e7e0c24.png)
 
 # 4W&#39;s and 1&#39;H
 
