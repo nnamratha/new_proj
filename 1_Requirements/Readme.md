@@ -3,16 +3,13 @@
 Calculators are simply a tool, which helps students to solve problems. Since they eliminate tedious computations and algebraic manipulations that discourage many students, calculators allow more students to solve problems and appreciate the power and value of mathematics in the world today.
 
 ## Research
-![Description](Link to Pic)
--- Content 
-## Cost and Features
-![Description](Link to Pic)
--- Content 
-## Defining Our System
-   
-   ![calci](https://user-images.githubusercontent.com/80394921/114739213-513b5500-9d66-11eb-920b-667873c6d0ea.jpg)
 
-    
+
+## Defining Our System
+ In this the calculator has 9 operators :
+ 1.Addition 2.Subtraction 3.Multiply 4.Division 5.Squareroot 6.Factorial 7.Exponent 8.Logarithm 9.Power 
+ ![calci](https://user-images.githubusercontent.com/80394921/114739213-513b5500-9d66-11eb-920b-667873c6d0ea.jpg)    
+      
 ## SWOT ANALYSIS
 
 ![CALCULATOR](https://user-images.githubusercontent.com/80394921/114668527-799f6100-9d1e-11eb-8929-2c1b0e7e0c24.png)
