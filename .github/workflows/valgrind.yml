@@ -1,13 +1,13 @@
+name: Valgrind
 
-name: CodeQuality Dynamic Code Analysis Valgrind
 on:
   push:
-    branches: [ main ]
+    branches: [ master ]
   pull_request:
-    branches: [ main ]
+    branches: [ master ]
 
 jobs:
-  test:
+  build:
 
     runs-on: ubuntu-latest
 
@@ -18,8 +18,6 @@ jobs:
         sudo apt-get -y install valgrind
         sudo apt-get -y install libcunit1 libcunit1-doc libcunit1-dev 
     - name: make test
-      run: make -C 3_Implementation/ test
-    - name: Valgrid
-      run: valgrind ./3_Implementation/build/Test_Calculator.out
-    - name: make distcheck
-      run: make distcheck
+      run: |
+        make test -C MiniProject_C/3_Implementation/
+        valgrind ./MiniProject_C/3_Implementation/build/Test_Calculator.out
