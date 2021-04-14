@@ -12,7 +12,7 @@ Calculators are simply a tool, which helps students to solve problems. Since the
     -- TBD
 ## SWOT ANALYSIS
 
-![SWOT](https://www.canva.com/design/DAEbbvdf-zk/share/preview?token=vlN8kaP0Fq_4UvwmgsLW-g&role=EDITOR&utm_campaign=designshare&utm_source=sharebutton)
+![SWOT](https://www.canva.com/design/DAEbbvdf-zk/ZHss7z7JQdGiHkxylLRtFg/view?utm_content=DAEbbvdf-zk&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink)
 
 # 4W&#39;s and 1&#39;H
 
