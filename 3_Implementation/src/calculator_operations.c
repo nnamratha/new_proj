@@ -8,18 +8,18 @@
  */
 int addition(value *find){
    int final=find->val1 + find->val2;                     // addition of operands
-   printf("%d + %d =%d\n",find->val1,find->val2,final);
+   printf(" Addition of %d + %d = %d\n",find->val1,find->val2,final);
    return final;
 }
 int subtraction(value *find){
    int final=(find->val1)-(find->val2);                     // subtraction of operands
-   printf("sub %d\n",final);
+   printf("subtraction of %d - %d = %d\n",find->val1,find->val2,final);
    return final;
 }
 
 int multiplication(int *value1,int *value2){
    int final= (*value1)*(*value2);                         // multiplication of operands
-    printf(" multiplication =%d\n",final);
+    printf(" multiplication = %d\n",final);
     return final;
 }
 
@@ -30,13 +30,13 @@ int division(int *value1,int *value2){
     }
 
    int final= (*value1)/(*value2);                  
-    printf(" quotient =%d\n",final);
-    printf(" remainder =%d\n",(*value1)%(*value2));     // division of 2 operands
+    printf(" quotient = %d\n",final);
+    printf(" remainder = %d\n",(*value1)%(*value2));     // division of 2 operands
     return final;
 }
 int squareroot(int *value3){
    int final= sqrt(*value3);               
-    printf(" squareroot %d =%d\n",*value3,final);
+    printf(" squareroot %d = %d\n",*value3,final);
     return final;
 }
 int factorial(int *value3){
@@ -49,18 +49,24 @@ int factorial(int *value3){
     for (int i = 1; i <= *value3;i++) {
             fact *= i;
         }
- printf("%d!= %d\n",*value3,fact);
+ printf("%d! = %d\n",*value3,fact);
  return fact;
 }
 
 int exponent(int *value3){
    float final= exp(*value3);               
-    printf(" exponent =%.3f\n",final);                                // exponent of operand
+    printf(" exponent = %.3f\n",final);                                // exponent of operand
     return final;
 }
 
 int logarithm(int *value3){
    float final= log(*value3);               
-    printf(" logarithm =%.3f\n",final);                                // logarithm of operand
+    printf(" logarithm = %.3f\n",final);                                // logarithm of operand
+    return final;
+}
+
+int power(int *value1,int *value2){
+   int final= pow(*value1,*value2);               
+    printf(" power = %d\n",final);                                // power of operand
     return final;
 }

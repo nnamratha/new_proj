@@ -34,4 +34,5 @@ int squareroot(int *value3);
 int factorial(int *value);
 int exponent(int *value3);
 int logarithm(int *value3);
+int power(int *value1, int *value2);
 #endif  

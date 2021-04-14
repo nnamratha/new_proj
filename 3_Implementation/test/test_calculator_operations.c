@@ -23,6 +23,7 @@ void test_fact_negative(void);
 void test_fact_by0(void);
 void test_expo(void);
 void test_loge(void);
+void test_powe(void);
 
 
 
@@ -46,6 +47,8 @@ RUN_TEST(test_fact_negative);
 RUN_TEST(test_fact_by0);
 RUN_TEST(test_divide_by0);
 RUN_TEST(test_loge);
+RUN_TEST(test_powe);
+
   /* Close the Unity Test Framework */
   return UNITY_END();
 }
@@ -97,4 +100,8 @@ void test_expo(void) {
 
 void test_loge(void) {
   TEST_ASSERT_EQUAL(1.386, logarithm(&v3));
+}
+
+void test_powe(void) {
+  TEST_ASSERT_EQUAL(36, power(&v1,&v2));
 }
