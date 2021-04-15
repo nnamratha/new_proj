@@ -40,8 +40,9 @@ By using the calculator and by entering the appropriate number and getting the d
 
 # Detail requirements               
 ## High Level Requirements:
- --- TBD in Tabular Format 
--- ID | Description | Status (Implemented/Future)
+
+    ID | Description | Status (Implemented/Future)
+    -------|---------|-----------------------------------
    HR_01|Arithmetic operations|Implemented
    HR_02|Additional operations|Implemented
    HR_03|Wrong operation entered,the calculator gets exit|Implemented
