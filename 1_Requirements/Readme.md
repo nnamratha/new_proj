@@ -41,14 +41,15 @@ By using the calculator and by entering the appropriate number and getting the d
 # Detail requirements               
 ## High Level Requirements:
 
-    ID | Description | Status (Implemented/Future)
-
-    HR_01 |Arithmetic operations |Implemented
-    HR_02|Additional operations|Implemented
-    HR_03|Wrong operation entered,the calculator gets exit|Implemented
-    HR_04|The data should not be lost during failure|Future
-    HR_05|Trignometric operations implementation|Future
-    HR_06|Permutations and Combinations|Future
+| ID        | Description           | Status  |
+| ------------- |:-------------:| -----:|
+|HR_01     | Arithmetic operations | Implemented |
+|HR_02     | Additional operations      |   Implemented |
+|HR_03 |    |Wrong operation entered,the calculator gets exit   | Implemented   |
+|HR_04  | The data should not be lost during failure | Future|
+|HR_05|Trignometric operations implementation|Future|
+|HR_06|Permutations and Combinations|Future|
+   
    
 ##  Low level Requirements:
 --- TBD in Tabular Format 
