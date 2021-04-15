@@ -65,6 +65,7 @@ By using the calculator and by entering the appropriate number and getting the d
 |:------------:|:-------------:|:-----:|
 |LR_01     |For each set of numbers the arthimetic operators like `+`,`-`,`*`,`/` are performed and output is retrieved| Implemented |
 |LR_02     | Each operation has a different methos so that it is easy to understand and implement     |   Implemented |
-|LR_03 | press 1 to continue to use calculator and 10 to end   | Implemented   |
+|LR_03     |Additional operators are `square root`,`logarithm`,`factorial`,`power`,`exponent` are performed and output is retrieved|Implemented|
+|LR_04 | press 1 to continue to use calculator and 10 to end   | Implemented   |
 
 
