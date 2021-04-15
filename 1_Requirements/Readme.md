@@ -7,15 +7,15 @@ Calculators also have the ability to store numbers into computer memory. Basic c
 
 ## Defining Our System
  In this the calculator has 9 operators :
-`**1.Addition**
- **2.Subtraction** 
- **3.Multiply**
- **4.Division** 
- **5.Squareroot** 
- **6.Factorial** 
- **7.Exponent**
- **8.Logarithm** 
- **9.Power**` 
+`1.Addition
+ 2.Subtraction
+ 3.Multiply
+ 4.Division 
+ 5.Squareroot 
+ 6.Factorial 
+ 7.Exponent
+ 8.Logarithm 
+ 9.Power`
  
  ![calci](https://user-images.githubusercontent.com/80394921/114739213-513b5500-9d66-11eb-920b-667873c6d0ea.jpg)    
       
@@ -60,5 +60,11 @@ By using the calculator and by entering the appropriate number and getting the d
    
    
 ##  Low level Requirements:
---- TBD in Tabular Format 
--- ID | Description | Status (Implemented/Future)
+
+| ID        | Description           | Status  |
+|:------------:|:-------------:|:-----:|
+|LR_01     |For each set of numbers the arthimetic operators like `+`,`-`,`*`,`/` are performed and output is retrieved| Implemented |
+|LR_02     | Each operation has a different methos so that it is easy to understand and implement     |   Implemented |
+|LR_03 | press 1 to continue to use calculator and 10 to end   | Implemented   |
+
+
