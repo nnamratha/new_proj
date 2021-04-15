@@ -7,7 +7,15 @@ Calculators also have the ability to store numbers into computer memory. Basic c
 
 ## Defining Our System
  In this the calculator has 9 operators :
- 1.Addition 2.Subtraction 3.Multiply 4.Division 5.Squareroot 6.Factorial 7.Exponent 8.Logarithm 9.Power 
+ `1.Addition
+ 2.Subtraction 
+ 3.Multiply
+ 4.Division 
+ 5.Squareroot 
+ 6.Factorial 
+ 7.Exponent 
+ 8.Logarithm 
+ 9.Power` 
  
  ![calci](https://user-images.githubusercontent.com/80394921/114739213-513b5500-9d66-11eb-920b-667873c6d0ea.jpg)    
       
