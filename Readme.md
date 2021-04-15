@@ -1,6 +1,6 @@
 # SDLC Activity Based Learning
 
-Visit [Pages for Report -optional](using github.io option)
+
 
 Build | Code Quality | Unity | [Git Inspector](using github.io option)
 ------|----------|-------|--------------
@@ -22,8 +22,8 @@ Folder             | Description
 
 PS No. |  Name   |   
 -------|---------|
-   SME  | Prithvisekhar  
-   263700    | N.Namratha Reddy
+   `SME`  | `Prithvisekhar`  
+  ` 263700 `   | `N.Namratha Reddy`
     
 
 
