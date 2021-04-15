@@ -38,9 +38,9 @@ It can be used anywhere to do calculations.
 
 By using the calculator and by entering the appropriate number and getting the desired value.
 
-# Detail requirements               ( TO BE DONE)
+# Detail requirements               
 ## High Level Requirements:
- 
+ --- TBD in Tabular Format 
 -- ID | Description | Status (Implemented/Future)
    HR_01|Arithmetic operations|Implemented
    HR_02|Additional operations|Implemented
