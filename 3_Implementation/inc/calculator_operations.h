@@ -15,21 +15,21 @@
 #include<math.h>
 
 typedef struct value{
-    int val1;                        //variables used in calculator
+    int val1;                        //variables used in calculator through structure
     int val2;
 }value;
 
 /**
- * @brief operations involved in this calculator
+ * @brief Operations involved in this calculator
  * 
  * @param find 
  * @return int 
  */
-// int *value1,*value2,*value3;
+
 int addition(value *val);
 int subtraction(value *val);
 int multiplication(int *value1, int *value2);
-int division(int *value1, int *value2);
+int division(int *value1, int *value2);           // variables passed through pointers
 int squareroot(int *value3);
 int factorial(int *value);
 int exponent(int *value3);
