@@ -38,7 +38,7 @@ It can be used anywhere to do calculations.
 
 By using the calculator and by entering the appropriate number and getting the desired value.
 
-# Detail requirements
+# Detail requirements               ( TO BE DONE)
 ## High Level Requirements:
 --- TBD in Tabular Format 
 -- ID | Description | Status (Implemented/Future)
