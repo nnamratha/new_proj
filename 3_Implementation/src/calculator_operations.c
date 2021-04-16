@@ -1,3 +1,13 @@
+/**
+ * @file calculator_operations.h
+ * @author namratha
+ * @brief 
+ * @version 0.1
+ * @date 2021-04-13
+ * 
+ * @copyright Copyright (c) 2021
+ * 
+ */
 #include "calculator_operations.h"
 #include "stdio.h"
 /**
